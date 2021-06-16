@@ -7,7 +7,13 @@
   align-items: center;
   height: 100vh;
 }
-
+header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 50px;
+}
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -108,9 +114,11 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+
+.logo img {
+  padding: 0rem 1rem;
+  display: block;
+  width: 120px;
 }
 
 @media (max-width: 600px) {

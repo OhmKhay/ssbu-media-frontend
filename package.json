@@ -1,6 +1,6 @@
 {
   "name": "ssbu-media",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -22,6 +22,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-jinke-music-player": "^4.24.1",
+    "react-progressive-image": "^0.6.0",
     "url-loader": "^4.1.1",
     "webpack": "^4.46.0"
   },
