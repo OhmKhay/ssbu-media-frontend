@@ -28,19 +28,22 @@ function downloadUrl(url, filename) {
     };
     xhr.send();
   }
-
-const AudioPlayer = ({ audioList, playIndex = 0, clearPriorAudioLists }) => {
+ 
+   
+  
+  
+const AudioPlayer = ({ audioList, playIndex = 0 }) => {
 
     const onHandleDownload = (audioInfo) => {
-      console.log("here is audio Info:", audioInfo.musicSrc)
-     return downloadUrl(audioInfo.musicSrc, audioInfo.name)
+      
+     return  window.open(audioInfo.musicSrc, '_blank').focus();
     }
 
     
 
     return (
         <>
-             { isBrowser && <ReactJkMusicPlayer onAudioDownload={onHandleDownload} clearPriorAudioLists={clearPriorAudioLists}  playIndex={playIndex}  audioLists={audioList} theme="light" showThemeSwitch={false} showLyric={true} autoPlay={false} toggleMode={false} mode="full" />}
+             { isBrowser && <ReactJkMusicPlayer onAudioDownload={onHandleDownload}   playIndex={playIndex}  audioLists={audioList} theme="light" showThemeSwitch={false} showLyric={true} autoPlay={false} toggleMode={false} mode="full" />}
         </>
     )
 }
