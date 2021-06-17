@@ -6,13 +6,41 @@ import { isBrowser } from '../../../utils/helper';
 // const audioCover = 'https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/kbwc.png';
 // const ChantingMorning = 'https://ssbu-media.sgp1.digitaloceanspaces.com/moring-chanting-of-khuva-boonchum.mp3';
 
+function downloadUrl(url, filename) {
+    console.log("here isurl:", url)
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.responseType = "blob";
+    xhr.onload = function(e) {
+      if (this.status == 200) {
+        const blob = this.response;
+        const a = document.createElement("a");
+        document.body.appendChild(a);
+        const blobUrl = window.URL.createObjectURL(blob);
+        a.href = blobUrl;
+        a.download = filename;
+        a.click();
+        setTimeout(() => {
+          window.URL.revokeObjectURL(blobUrl);
+          document.body.removeChild(a);
+        }, 0);
+      }
+    };
+    xhr.send();
+  }
+
 const AudioPlayer = ({ audioList, playIndex = 0, clearPriorAudioLists }) => {
 
+    const onHandleDownload = (audioInfo) => {
+      console.log("here is audio Info:", audioInfo.musicSrc)
+     return downloadUrl(audioInfo.musicSrc, audioInfo.name)
+    }
 
+    
 
     return (
         <>
-             { isBrowser && <ReactJkMusicPlayer clearPriorAudioLists={clearPriorAudioLists}  playIndex={playIndex}  audioLists={audioList} theme="light" showThemeSwitch={false} showLyric={true} autoPlay={false} toggleMode={false} mode="full" />}
+             { isBrowser && <ReactJkMusicPlayer onAudioDownload={onHandleDownload} clearPriorAudioLists={clearPriorAudioLists}  playIndex={playIndex}  audioLists={audioList} theme="light" showThemeSwitch={false} showLyric={true} autoPlay={false} toggleMode={false} mode="full" />}
         </>
     )
 }
