@@ -40,6 +40,7 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -11;
 }
 
 .footer a {
@@ -50,13 +51,13 @@ header nav {
 }
 
 .title a {
-  color: #0070f3;
+  color: #31C27C;
   text-decoration: none;
 }
 .btn {
   display: inline-block;
-  background: #007bff;
-  border: 1px solid #007bff;
+  background: #31C27C;
+  border: 1px solid #31C27C;
     line-height: 0.3888;
     white-space: nowrap;
     cursor: pointer;
@@ -129,8 +130,8 @@ header nav {
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #31C27C;
+  border-color: #31C27C;
 }
 
 .card h2 {
@@ -146,7 +147,7 @@ header nav {
 
 
 .logo img {
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem 0.2rem;
   display: inline-block;
   width: 120px;
   /* height: 100%; */

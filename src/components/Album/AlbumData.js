@@ -203,7 +203,7 @@ export const AlbumData = [
         audios: [
             {
               id: 1,
-              name: "Moring Chanting Of Khuva Boonchum",
+              name: "Morning Chanting Of Khuva Boonchum",
               cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/khurva/kbwc.png",
               musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/khurva/moring-chanting-of-khuva-boonchum.mp3",
               singer: "The Most Ven.Khuva Boonchum",

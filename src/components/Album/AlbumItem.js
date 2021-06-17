@@ -249,7 +249,7 @@ const AlbumItem = ({ audio }) => {
                         fontWeight: '600',
                         backgroundColor: `${audio.singer && audio.singer.name === 'Notice' ? 'rgba(0,132,255,0.1)': 'rgb(84 239 153 / 1%)'}`,
                         borderRadius: '20px',
-                        color: `${audio.singer && audio.singer.name === 'Notice' ? '#007bff' : '#0070f3'}`,
+                        color: `${audio.singer && audio.singer.name === 'Notice' ? '#007bff' : '#31C27C'}`,
                       }}
                       
                       >
