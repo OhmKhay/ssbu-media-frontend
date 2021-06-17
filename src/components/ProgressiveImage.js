@@ -20,19 +20,18 @@ const ProgressiveImageComponent = ({ imageUrl, alt, class_Name = null, borderRad
                   max-width: 100%;
                   height: 100%;
                   max-height: 100%;
-                  object-fit: cover;
-                  transition: all 0.2s linear;
+                
                 }
       
                 .cards__item__img:hover {
-                  transform: scale(1.1);
+                  // transform: scale(1.1);
                 }
             `}
 
             </style>
             <ProgressiveImage src={imageUrl} placeholder={placeHolder}>
             {(src, loading) => {
-              return <img src={src}   alt={alt || 'ssbu image'} className={`${class_Name ? class_Name: ''}`} style={{ opacity: loading ? 0.5 : 1, width:`${width?width:'100%'}`, borderRadius: borderRadius || '0px' }} />;
+              return <img src={src}   alt={alt || 'ssbu image'} className={`${class_Name ? class_Name: ''}`} style={{ opacity: loading ? 0.5 : 1, width:`${width?width:'100%'}` }} />;
             }}
            </ProgressiveImage>
 

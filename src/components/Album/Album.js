@@ -1,208 +1,53 @@
-import React from 'react'
-import AlbumItem from "./AlbumItem";
-const Album = () => {
-    const AlbumData = [
-        {
-            id: 1,
-            name: "English Primary Level Year One",
-            cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-            singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-            audios: [
-                {
-                id: 0,
-                name: "Instruction For Primary Level Year One",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/Instruction-for-primary-level-year-one.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
+import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
+import SongItem from './Songs/SongItem';
+import "./singleAlbum.less"
+import ProgressiveImageComponent from '../ProgressiveImage';
+const AudioPlayer = dynamic(
+    () => import('../AudioPlayer'),
+    { ssr: false }
+  );
 
-               },
-               {
-                id: 1,
-                name: "Lesson 1",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-1.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
+const Album = ({ album }) => {
+ 
 
-               },
-               {
-                id: 2,
-                name: "Lesson 2",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-2.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
+    let Audios;
+    const MyAlbum = album.filter((album) => {
+        return Audios = album.audios;
+    })
 
-               },
-               {
-                id: 3,
-                name: "Lesson 3",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-3.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
 
-               },
-               {
-                id: 4,
-                name: "Lesson 4",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-4.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
 
-               },
-               {
-                id: 5,
-                name: "Lesson 5",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-5.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
 
-               },
-               {
-                id: 6,
-                name: "Lesson 6",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-6.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 7,
-                name: "Lesson 7",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-7.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 8,
-                name: "Lesson 8",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-8.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 9,
-                name: "Lesson 9",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-9.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 10,
-                name: "Lesson 10",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-10.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 11,
-                name: "Lesson 11",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-11.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 12,
-                name: "Lesson 12",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-12.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 13,
-                name: "Lesson 13",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-13.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 14,
-                name: "Lesson 14",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-14.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 15,
-                name: "Lesson 15",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-15.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 16,
-                name: "Lesson 16",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-16.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 17,
-                name: "Lesson 17",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-17.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 18,
-                name: "Lesson 18",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-18.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 19,
-                name: "Lesson 19",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-19.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 20,
-                name: "Lesson 20",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-20.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 21,
-                name: "Lesson 21",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-21.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-               {
-                id: 22,
-                name: "Lesson 22",
-                musicSrc: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-22.mp3",
-                cover: "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
-                singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
-
-               },
-              
-              
-        ]
-        },
-       
-    ]
     return (
-        <div>
-             {AlbumData.map((data) => {
-                 return <AlbumItem key={data.id} audio={data} />
-             })}
+        <div className="album">
+            
+              {album.map((album) => {
+                  return <div key={album.id}>
+                      <div className="album_cover">
+                            <ProgressiveImageComponent 
+                            imageUrl={album.cover}
+                            alt={album.name}
+                            borderRadius={'3px'}
+                         
+                            />
+
+                        </div>
+                      <h1 className="audio_title">
+                       {album.name}
+                      </h1>
+                      
+                      <span className="singer">
+                          {album.singer}
+                      </span>
+                      </div>
+              })}
+              <button className="btn"> Added to PlayList </button>
+
+              {album?.map((album) => {
+                  return album.audios.map((song, index)  =>  <SongItem index={index} Audios={Audios} key={song.id} song={song}  /> )
+              })}
+           
         </div>
     )
 }

@@ -1,0 +1,67 @@
+.main_con {
+    margin: 2rem auto;
+
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.music-card {
+    width: fit-content;
+   
+    // padding: 10px;
+    .music-card-cover {
+      position: relative;
+      display: flex;
+      z-index: 2;
+      img {
+        width: 320px;
+        height: 320px;
+      }
+      .play-circle {
+        position: absolute;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2888;
+        svg {
+            fill: #fff;
+        }
+      }
+  
+      .hover-img {
+        visibility: visible;
+      }
+    }
+  
+    .music-card-cover:hover {
+      cursor: pointer;
+  
+      
+        filter: brightness(0.34);
+      
+  
+      .play-circle {
+        text-align: center;
+        color: #fff;
+        position: absolute;
+    
+        width: 100%;
+        height: 100%;
+     
+        display: flex;
+        z-index: 2888;
+        svg {
+            fill: #fff;
+        }
+        align-items: center;
+        justify-content: center;
+        visibility: visible;
+      }
+    }
+  }

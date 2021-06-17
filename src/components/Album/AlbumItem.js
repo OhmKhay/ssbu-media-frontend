@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+
 import ProgressiveImageComponent from '../ProgressiveImage';
-import dynamic from 'next/dynamic';
-const AudioPlayer = dynamic(
-  () => import('../AudioPlayer'),
-  { ssr: false }
-);
+
+import "./album.less";
+import { PlayIcon } from '../../icons';
 
 const AlbumItem = ({ audio }) => {
 
-  const router = useRouter();
-  const [clickAlbum, setClickAlbum] = useState(false);
+  const [clickPlay, setClickPlay] = useState(false);
   const onClickAlbum = () => {
        setClickAlbum(true);
   }
  
+  const onHandlePlay = () => {
+      setClickPlay(true);
+  }
+
     return (
         <>
 
@@ -67,8 +68,8 @@ const AlbumItem = ({ audio }) => {
             flex-flow: column;
             width: 100%;
             box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-            -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-            filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+            // -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+            // filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
             border-radius: 10px;
             overflow: hidden;
             text-decoration: none;
@@ -78,17 +79,16 @@ const AlbumItem = ({ audio }) => {
             position: relative;
             width: 100%;
             margin: 0rem auto;
-            padding-top: 67%;
+            padding-top: 86%;
             font-family: 'GT Super Display';
             overflow: hidden;
           }
 
-          .fade-img {
-            animation-name: fade-img;
-            animation-duration: 2s;
-            border-radius: 10px;
-            
-          }
+          // .fade-img {
+          //   animation-name: fade-img;
+          //   animation-duration: 2s;
+          //   border-radius: 10px;
+          // }
 
           .cards__item__pic-wrap::after {
             // content: attr(data-singer);
@@ -151,12 +151,17 @@ const AlbumItem = ({ audio }) => {
               margin-bottom: 2rem;
             }
           }
+          .item {
+            border-radius: 15px;
+            margin: 0.6rem;
+            border: 1px solid #f2f2f2;
+          }
 
           .item:hover {
             cursor: pointer;
             box-shadow: 0 6px 18px rgba(56, 125, 255, 0.17);
-            -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-            filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+            // -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+            // filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
             border-radius: 10px;
             overflow: hidden;
       
@@ -165,8 +170,7 @@ const AlbumItem = ({ audio }) => {
           
           .item .img__box {
             width: 100%;
-            border-radius: 15px;
-            border: 1px solid #f2f2f2;
+        
             padding: 1rem;
           }
           .item .img__box img {
@@ -192,19 +196,32 @@ const AlbumItem = ({ audio }) => {
           }
           @media only screen and (min-width: 992px) {
             .item {
-              width: 85%;
+              width: 25%;
               float: left;
-              margin: 0rem;
-              padding: 1rem;
+              margin: 0.6rem;
+    
+            
             }
           }
+
+          
         `}
       </style>
       
-                <Link href={`#`} >
+            <Link href={`/album/[slug]`} as={`/album/${audio.slug}`}>
+ 
             <a onClick={onClickAlbum}>
               <div className="item">
+                 <div className="music-card">
+              
+              
                 <div className="img__box">
+            
+                <div className="music-card-cover">
+                  
+                  <div className="play-circle">
+                      <PlayIcon />
+                  </div>
                   {/* <img src={audio.background_image} /> */}
                   <figure className="cards__item__pic-wrap">
                   
@@ -214,8 +231,11 @@ const AlbumItem = ({ audio }) => {
                      borderRadius={'16px'}
                      class_Name="cards__item__img"
                     />
+
                     
                   </figure>
+
+                  </div>
                   <div className="info-box">
                     <span
                       className="singer"
@@ -227,9 +247,9 @@ const AlbumItem = ({ audio }) => {
                         margin: '0rem 0.6rem 0rem 0rem',
                         fontSize: '0.8rem',
                         fontWeight: '600',
-                        backgroundColor: `${audio.singer && audio.singer.name === 'Notice' ? 'rgba(0,132,255,0.1)': 'rgb(84 239 153 / 10%)'}`,
+                        backgroundColor: `${audio.singer && audio.singer.name === 'Notice' ? 'rgba(0,132,255,0.1)': 'rgb(84 239 153 / 1%)'}`,
                         borderRadius: '20px',
-                        color: `${audio.singer && audio.singer.name === 'Notice' ? '#007bff' : '#2fc778'}`,
+                        color: `${audio.singer && audio.singer.name === 'Notice' ? '#007bff' : '#0070f3'}`,
                       }}
                       
                       >
@@ -240,13 +260,17 @@ const AlbumItem = ({ audio }) => {
 
         
                   </div>
-               
+
+
+              
                 </div>
+
+                </div>
+
               </div>
             </a>
-          </Link>
+            </Link>
 
-         {clickAlbum&& <AudioPlayer audioList={audio?.audios} />}
         </>
     )
 }
