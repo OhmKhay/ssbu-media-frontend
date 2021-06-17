@@ -1,11 +1,14 @@
 import React from 'react';
-
+import { useRouter } from 'next/router';
 import Album from "../../src/components/Album/Album";
 import { AlbumData } from '../../src/components/Album/AlbumData';
 import Layout from "../../src/components/App/Layout";
 
-const SingleAlbum = ({ slug }) => {
- 
+const SingleAlbum = () => {
+    const {
+        query: { slug },
+      } = useRouter();
+    
     const album = AlbumData?.filter((data) => {
         return data.slug === slug; 
     });
@@ -22,11 +25,11 @@ const SingleAlbum = ({ slug }) => {
    
 }
 
-SingleAlbum.getInitialProps = async ({ query }) => {
-    const { slug } = query
+// SingleAlbum.getInitialProps = async ({ query }) => {
+//     const { slug } = query
    
 
-    return { slug }
-  }
+//     return { slug }
+//   }
 
 export default SingleAlbum;
