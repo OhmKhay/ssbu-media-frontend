@@ -5,17 +5,21 @@ import { AlbumData } from "../../src/components/Album/AlbumData";
 import Layout from "../../src/components/App/Layout";
 
 const SingleAlbum = ({ album }) => {
-  return (
-    <Layout>
-      <div
-        style={{
-          padding: "2rem",
-        }}
-      >
-        <Album album={[...album]} />
-      </div>
-    </Layout>
-  );
+  if (album) {
+    return (
+      <Layout path={album[0].slug} title={album[0].name} image={album[0].cover}>
+        <div
+          style={{
+            padding: "2rem",
+          }}
+        >
+          <Album album={[...album]} />
+        </div>
+      </Layout>
+    );
+  } else {
+    return <div>Loading...</div>;
+  }
 };
 
 SingleAlbum.getInitialProps = async ({ query }) => {
