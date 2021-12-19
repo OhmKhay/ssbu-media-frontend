@@ -238,6 +238,15 @@ export const AlbumData = [
           "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
         singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
       },
+      {
+        id: 23,
+        name: "Lesson 23 (L.A. Detective)",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/lesson-23-detective.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/book-cover.png",
+        singer: "The Most Ven.Pro. Dr.K.Dhammsami, DPhil(Oxford)",
+      },
     ],
   },
   {
