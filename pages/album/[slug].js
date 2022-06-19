@@ -7,11 +7,7 @@ import Layout from "../../src/components/App/Layout";
 const SingleAlbum = ({ album }) => {
   if (album) {
     return (
-      <Layout
-        path={album[0]?.slug}
-        title={album[0]?.name}
-        image={album[0]?.cover}
-      >
+      <Layout path={album[0].slug} title={album[0].name} image={album[0].cover}>
         <div
           style={{
             padding: "2rem",
