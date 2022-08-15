@@ -682,4 +682,23 @@ export const AlbumData = [
       },
     ],
   },
+  {
+    id: 5,
+    name: "English Reader The Adventures of Tom Sawyer",
+    slug: "english-Reader-the-adventures-of-tom-sawyer",
+    cover:
+      "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/tom-sawyer.jpeg",
+    singer: "Shan State Sangha Council Education Committee",
+    audios: [
+      {
+        id: 0,
+        name: "English Reader The Adventures of Tom Sawyer",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/The-Adventures-of-Tom-Sawyer.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/tom-sawyer.jpeg",
+        singer: "English Reader The Adventures of Tom Sawyer",
+      },
+    ],
+  },
 ];
