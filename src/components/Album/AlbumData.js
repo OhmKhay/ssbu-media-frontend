@@ -685,7 +685,7 @@ export const AlbumData = [
   {
     id: 5,
     name: "English Reader The Adventures of Tom Sawyer",
-    slug: "english-Reader-the-adventures-of-tom-sawyer",
+    slug: "english-reader-the-adventures-of-tom-sawyer",
     cover:
       "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/tom-sawyer.jpeg",
     singer: "Shan State Sangha Council Education Committee",
