@@ -701,4 +701,114 @@ export const AlbumData = [
       },
     ],
   },
+  {
+    id: 6,
+    name: "English Primary Level Year Two For Student",
+    publish: "Shan State Sangha Council Education Committee",
+    slug: "english-primary-level-year-two-for-student",
+    cover:
+      "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+    singer: "Shan State Sangha Council Education Committee",
+    audios: [
+      {
+        id: 0,
+        name: "English Primary Level Year Two Lesson 1",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-1.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 1,
+        name: "English Primary Level Year Two Lesson 2",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-2.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 2,
+        name: "English Primary Level Year Two Lesson 3",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-3.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 3,
+        name: "English Primary Level Year Two Lesson 4",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-4.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 4,
+        name: "English Primary Level Year Two Lesson 5",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-5.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 5,
+        name: "English Primary Level Year Two Lesson 6",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-6.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 6,
+        name: "English Primary Level Year Two Lesson 7",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-7.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 7,
+        name: "English Primary Level Year Two Lesson 8",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-8.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 8,
+        name: "English Primary Level Year Two Lesson 9",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-9.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 9,
+        name: "English Primary Level Year Two Lesson 10",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-10.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+      {
+        id: 10,
+        name: "English Primary Level Year Two Lesson 11",
+        musicSrc:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/eng/year-2-student/ENG-PRIMARY-Y2-Lesson-11.mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/img-cover/year-2.png",
+        singer: "-",
+      },
+    ],
+  },
 ];
