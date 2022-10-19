@@ -811,4 +811,176 @@ export const AlbumData = [
       },
     ],
   },
+  {
+    id: 7,
+    name: "English Reader Primary Level Year 3",
+    slug: "english-reader-primary-level-year-3",
+    cover:
+      "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+    singer: "Shan State Sangha Council Education Committee",
+    audios: [
+      {
+        id: 0,
+        name: " Introduction",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3-%28Introduction%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 1,
+        name: " Lesson 1",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3-%28Lesson%201%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 2,
+        name: " Lesson 2",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3-%28Lesson%202%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 3,
+        name: " Lesson 3",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3-%28Lesson%203%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 4,
+        name: " Lesson 4",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3-%28Lesson%204%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 5,
+        name: " Lesson 5",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG%20PRIMARY-Y3-%28Lesson-5%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 6,
+        name: " Lesson 6",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3-%28Lesson%206%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 7,
+        name: " Lesson 7",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-7%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 8,
+        name: " Lesson 8",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-8%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 9,
+        name: " Lesson 9 C1",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-9,%20C%201%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 9.5,
+        name: " Lesson 9 C2",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-9,C2%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 9.8,
+        name: " Lesson 9 C3",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-9,C%203%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 10,
+        name: " Lesson 10 C1",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-10,C%201%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 10.5,
+        name: " Lesson 10 C2",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-10,C%202%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 11.5,
+        name: " Lesson 11 C1",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-11,C%201%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 11.7,
+        name: " Lesson 11 C2",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-11,C%202%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 11.9,
+        name: " Lesson 11 C3",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-11,C%203%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 11.39,
+        name: " Lesson 11 C4",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/ENG-PRIMARY-Y3%20%28Lesson-11,C%204%29.mp3",
+        cover:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/year-3/year-3.jpg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+    ],
+  },
 ];
