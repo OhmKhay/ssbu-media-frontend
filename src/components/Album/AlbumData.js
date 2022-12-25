@@ -983,4 +983,133 @@ export const AlbumData = [
       },
     ],
   },
+  {
+    id: 6,
+    name: "English Reader Middle School Year One",
+    slug: "eng-reader-middle-school-year-1",
+    publish: "Shan State Sangha Council Education Committee",
+    cover:
+      "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+    singer: "Shan State Sangha Council Education Committee",
+    audios: [
+      {
+        id: 1,
+        name: "Eng Middle School Y1 (Lesson 1)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 1).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 2,
+        name: "Eng Middle School Y1 (Lesson 2)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 2).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 3,
+        name: "Eng Middle School Y1 (Lesson 3)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 3).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 4,
+        name: "Eng Middle School Y1 (Lesson 4)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 4).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 5,
+        name: "Eng Middle School Y1 (Lesson 5)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 5).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+
+      {
+        id: 6,
+        name: "Eng Middle School Y1 (Lesson 6 Chapter 1)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 6 Chapter 1).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 7,
+        name: "Eng Middle School Y1 (Lesson 6 Chapter 2)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 6 Chapter 2).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 8,
+        name: "Eng Middle School Y1 (Lesson 6 Chapter 3)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 6 Chapter 3).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 9,
+        name: "Eng Middle School Y1 (Lesson 6 Chapter 4)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 6 Chapter 4).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 10,
+        name: "Eng Middle School Y1 (Lesson 6 Chapter 5)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 6 Chapter 5).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 11,
+        name: "Eng Middle School Y1 (Lesson 6 Chapter 6)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 6 Chapter 6).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 12,
+        name: "Eng Middle School Y1 (Lesson 6 Chapter 7)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 6 Chapter 7).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+      {
+        id: 13,
+        name: "Eng Middle School Y1 (Lesson 6 Chapter 8)",
+        musicSrc:
+          "https://ssbu-media.sgp1.cdn.digitaloceanspaces.com/eng/middle-year-one/Eng Middle School Y1 (Lesson 6 Chapter 8).mp3",
+        cover:
+          "https://ssbu-media.sgp1.digitaloceanspaces.com/grade-one-text-book.jpeg",
+        singer: "Shan State Sangha Council Education Committee",
+      },
+    ],
+  },
 ];
