@@ -1112,4 +1112,23 @@ export const AlbumData = [
       },
     ],
   },
+  {
+    id: 7,
+    name: "Sherlock Holmes and The Duke 's Son",
+    slug: "sherlock-holmes-and-the-duke-son",
+    cover:
+      "https://ssbu-media.s3.ap-southeast-1.amazonaws.com/new-book-cover.jpeg",
+    singer: "Oxford Bookworms",
+    audios: [
+      {
+        id: 1,
+        name: "Sherlock Holmes and The Duke 's Son",
+        cover:
+          "https://ssbu-media.s3.ap-southeast-1.amazonaws.com/new-book-cover.jpeg",
+        musicSrc:
+          "https://ssbu-media.s3.ap-southeast-1.amazonaws.com/Sherlock+Holmes+and+The+Duke+'s+Son+_+by+S.mp3",
+        singer: "Oxford Bookworms",
+      },
+    ],
+  },
 ];
